@@ -7,13 +7,15 @@ const anneeInput = document.getElementById("operation");
 
 
 function calculator(number1,operator,number2){
-    if(operator === "x" || operator === "*") {
+    if(operator === 'x' || operator === '*') {
         return number1 * number2;
-    } else if(operator === "/"){
+    } else if(operator === '/'){
         return number1 / number2;
-    } else if(operator === "+"){
+    } else if(operator === '+'){
         return number1 + number2;
-    } else(operator === "-"){
+    } else if(operator === '-'){
         return number1 - number2;
+    } else {
+        console.log('Opérateur innconu')
     }
 }
