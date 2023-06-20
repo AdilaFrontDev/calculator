@@ -1,0 +1,28 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "exercice pour javascript",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch ./styles.scss:./styles.css",
+    "prefix": "postcss ./styles.css --use autoprefixer -d ./prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdilaFrontDev/calculator.git"
+  },
+  "author": "AdilaFrontDev",
+  "license": "ISC",
+  "browsereslist": "last 4 version",
+  "bugs": {
+    "url": "https://github.com/AdilaFrontDev/calculator/issues"
+  },
+  "homepage": "https://github.com/AdilaFrontDev/calculator#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14"
+  },
+  "dependencies": {
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0"
+  }
+}

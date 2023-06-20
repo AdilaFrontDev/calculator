@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Calculatrice</title>
-   <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
-   <h1>Super calculatrice</h1>
-   <input id="operation" type="text" placeholder="entrer l'opération">
-   <input id="bouton" type="button" value="Calculer">
-   <h2 id="result"></h2>
+    <div class="calculatrice">
+        <div id="ecran" class="calculatrice_ecran"></div>
+        <div class="calculatrice_touches">
+            <div class="ligne">
+                <button class="button clear button--c">c</button>
+                <button class="button openBracket">(</button>
+                <button class="button closeBarcket">)</button>
+                <button class="button operator">/</button>
+            </div>
+           <div class="ligne">
+                <button class="button chiffre">7</button>
+                <button class="button chiffre">8</button>
+                <button class="button chiffre">9</button>
+                <button class="button operator">*</button>
+           </div>
+           <div class="ligne">
+                <button class="button chiffre">4</button>
+                <button class="button chiffre">5</button>
+                <button class="button chiffre">6</button>
+                <button class="button operator">-</button>
+           </div> 
+           <div class="ligne">
+                <button class="button chiffre">1</button>
+                <button class="button chiffre">2</button>
+                <button class="button chiffre">3</button>
+                <button class="button operator">+</button>
+           </div>
+            <div class="ligne">
+                <button class="button chiffre">0</button>
+                <button class="button virgule">.</button>
+                <button onclick="doCalculation()" class="button equal button--enter">=</button>
+            </div>
+                  
+        </div>
+    </div>
    <script src="./script.js"></script>
 </body>
 </html>
